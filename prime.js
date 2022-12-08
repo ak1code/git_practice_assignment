@@ -1,8 +1,8 @@
 function prime(number) {
   count = 0;
-  for (i = 1; i < number; i++) {
-    if (number % 2 == 0) {
-      count=count+1
+  for (i = 1; i <= number; i++) {
+    if (number % i == 0) {
+      count++
     }
   }
   if (count == 2) {
@@ -14,9 +14,9 @@ function prime(number) {
 }
 let ans = prime(13);
 if (ans == true) {
-  console.log("Prime")
+  console.log("It is a Prime number")
 }
 else {
-  console.log("not prime")
+  console.log("It is not a Prime number")
 }
 
