@@ -1,23 +1,22 @@
 function prime(number) {
-  counting = 0;
-  for (i=1; i<=number; i++) {
-    if (number % i==0) {
-      counting++
+  count = 0;
+  for (i = 1; i < number; i++) {
+    if (number % 2 == 0) {
+      count=count+1
     }
   }
-  if (counting == 2) {
+  if (count == 2) {
     return true;
   }
   else {
     return false;
   }
 }
-let ans = prime(10);
+let ans = prime(13);
 if (ans == true) {
-  console.log("It is Prime number")
+  console.log("Prime")
 }
-  
 else {
-  console.log("It is not a prime number")
+  console.log("not prime")
 }
 
